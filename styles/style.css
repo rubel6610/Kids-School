@@ -21,11 +21,7 @@
 .btn-orange{
     background-color: orange;
     color:#fff;
-    padding:10px 30px;
-    border-radius: 12px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+    
 }
 .btn-black{
     background-color: black;
@@ -34,6 +30,10 @@
 
 
 /* header style */
+
+.nav-icon{
+    display: none;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -48,14 +48,10 @@ header{
     
 }
 .nav-brand img{
-    max-width: 100%;
+    max-width: 50px;
     margin-right: 10px;
 }
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .navbar ul{
     display: flex;
 
@@ -68,4 +64,41 @@ header{
     padding: 10px;
     font-size: 1rem;
     font-weight: bold;
+}
+.contact-btn{
+    padding:10px 30px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact-btn:hover{
+    background-color: #05D4DF;
+    color:black;
+}
+.nav-link:hover{
+    background-color: rgba(172, 255, 47, 0.312);
+    
+}
+
+
+
+@media screen and (max-width:576px) {
+    .navbar{
+        display: none;
+    }
+    .contact-btn{
+        display: none;
+    }
+    .brand-title{
+        display: none;
+    }
+    
+     .nav-icon {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 2rem;
+        border: none;
+    }
+
 }
