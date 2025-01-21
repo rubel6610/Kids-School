@@ -33,7 +33,7 @@
     border: none;
     font-weight: bold;
     cursor: pointer;
-    z-index: 2;
+    
 }
 .contact-btn:hover{
     background-color: #05D4DF;
@@ -82,7 +82,7 @@ header{
 }
 .navbar ul li{
     list-style: none;
-    z-index: 3;
+   
 }
 .navbar ul li a{
     text-decoration: none;
@@ -104,16 +104,12 @@ header{
     
 }
 .banner .banner-content{
-    
     max-width: 50%;
-    
-
 }
 
 .banner img{
-    max-width: 50%;
-    transform: translateY(-10%);
-    z-index: 1;   
+    max-width: 400px;
+     
 }
 .banner-content h1{
     line-height: 50px;
@@ -151,7 +147,6 @@ header{
     }
    
     .banner img{
-        transform: translateY(0);
         max-width: 100%;
     }
  .banner .banner-content{
@@ -159,6 +154,7 @@ header{
         text-align: center;
         margin:20px 0;
     }
+  
     
 
 }
