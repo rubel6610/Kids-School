@@ -101,20 +101,20 @@ header{
     justify-content: space-between;
     align-items: center;
     margin:0px 7%;
+    
 }
 .banner .banner-content{
     
-    width: 50%;
+    max-width: 50%;
     
 
 }
+
 .banner img{
-    width: 400px;
-    transform: translateY(-10% );   
-    z-index: 1;
-    
+    max-width: 50%;
+    transform: translateY(-10%);
+    z-index: 1;   
 }
-
 .banner-content h1{
     line-height: 50px;
     font-weight: bold;
@@ -149,13 +149,13 @@ header{
         
         
     }
+   
     .banner img{
-        
-        transform: translateY(0 );
-        
+        transform: translateY(0);
+        max-width: 100%;
     }
  .banner .banner-content{
-        width: 100%;
+        max-width: 100%;
         text-align: center;
         margin:20px 0;
     }
