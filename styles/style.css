@@ -22,11 +22,27 @@
 .text-dark-sky{
     color:#5D58EF;
 }
+.bg-dark-sky{
+    color:#ffffff;
+    background-color: #5D58EF;
+}
+#text-blue{
+    color:aqua;
+}
+.text-green{
+    background-color: #95B226;
+    color: white;
+}
 .btn-orange{
     background-color: orange;
     color:#fff;
     
 }
+ .cards button{
+    border: none;
+    font-size: 0.9rem;
+ }
+
 .contact-btn{
     padding:10px 30px;
     border-radius: 12px;
@@ -133,14 +149,14 @@ header{
    
 }
 .standard-curriculum h5{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 400;
     color:#f875cc;
     
 }
-.standard-curriculum h5:last-child{
+/* .standard-curriculum h5{
     color:aqua;
-}
+} */
 .standard-curriculum h1{
     font-size: 2rem;
     font-weight: bold;
@@ -201,6 +217,10 @@ header{
     margin-top: 10px;
     gap: 10px;
 }
+.circle:hover{
+    background-color: #01ACFD;
+    color: #fff;
+}
 .circle {
     width: 50px; 
     height: 50px;
@@ -218,6 +238,123 @@ header{
      
 }
 
+/*our stories section related styles */
+
+.our-stories{
+    max-width: 1440px;
+    background: linear-gradient(#fff, rgba(255, 0, 0, 0.17)), url(/assets/bg.png);
+    margin: 0px 0;
+    padding: 30px 0;
+    text-align: center;
+}
+.our-stories h1{
+    font-size: 2rem;
+    
+}
+.stories-card-container{
+    display: flex;
+    gap: 20px;
+    
+}
+.small-card{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.last-2card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.cards{
+    position: relative;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+ .cards-1 .img1{
+    width: 500px;
+   
+}
+.cards-1{
+   max-width: 550px;
+   
+}
+.cards-1 button{
+    position: absolute;
+    left: 35px;
+    top: 300px;
+    background-color:#3CD8E8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 1.4rem;
+}
+#cards-1-title{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+#cards-1-description{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.cards img{
+    width: 260px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cards h3{
+    font-size: 1rem;
+    font-weight: bold;
+    word-spacing: 4px;
+}
+
+.small-card button{
+    position: absolute;
+    left: 35px;
+    top: 155px;
+    padding: 10px;
+    border-radius: 16px;
+}
+.last-2card button{
+    position: absolute;
+    left: 35px;
+    top: 155px;
+    padding: 10px;
+    border-radius: 16px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #01ACFD;
+    padding: 40px;
+    color: #fff;
+}
+.footer-about{
+    max-width: 40%;
+
+}
+.footer-about img{
+    color:#fff;
+}
+.footer-brand{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.footer-brand h2{
+    color: #fff;
+}   
+.footer-list ul li{
+    list-style: none;
+    padding: 10px;
+}
+.social-link h2{
+    margin-bottom: 20px;
+}
 @media screen and (max-width:576px) {
     .navbar{
         display: none;
@@ -241,9 +378,7 @@ header{
     }
 
     .banner{
-        flex-direction: column-reverse;
-        
-        
+        flex-direction: column-reverse;  
     }
    
     .banner img{
@@ -259,4 +394,38 @@ header{
         flex-direction: column;
     }
 
+
+    .cards-1{
+        display: none;
+    }
+  .stories-card-container{
+    margin: 0 auto;
+  }
+    .cards{
+        width: 180px;       
+    }
+    .cards img{
+        width: 150px;
+       
+    }
+    .cards button{
+        top:95px;
+        font-size: 0.7rem;
+    }
+    .small-card{
+       width: 100%;
+       gap: 44px;
+    }
+    .last-2card{
+      width: 100%;   
+
+    }
+    footer{
+        flex-direction: column;
+        
+    }
+  
+    .footer-about{
+        max-width: 100%;
+    }
 }
